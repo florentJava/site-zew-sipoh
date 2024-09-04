@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+
+header {
+    box-sizing: border-box;
+    width: 100%; 
+    height: 90vh;
+
+
+
+
+    background-image:  linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #161C2D 99.54%)
+    ,url('./assets/bg_1.jpeg');
+    background-blend-mode: multiply;
+
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    gap: 10vh;
+
+    /* aspect-ratio: 4096/9 */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    
+}
+
+
+
+.menu {
+
+    margin-top: 17px;
+    margin-bottom: 48px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+    /* border: 1px solid red; */
+
+    width: 90%;
+}
+
+.menu img {
+    width: 5vw;
+    aspect-ratio: 979/477;
+
+}
+
+.adapt{
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.menu nav ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    list-style: none;
+
+    /* border: 1px solid blue; */
+
+
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    /* margin-right: auto; */
+
+
+}
+
+
+.menu nav  ul   li  a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(18px, 1vw, 30px);
+    
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+
+.store-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espace entre les boutons */
+}
+
+.store-button img {
+
+    width: 160px;
+
+    aspect-ratio: 135/40; 
+    display: block;
+}
+
+
+
+.message{
+
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 10%;   
+    padding-right: 5%;
+}
+
+.message h1{
+
+    font-size: clamp(30px, 6vh, 75px);
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 3px;
+    line-height: 1.2; /* Hauteur de ligne à 1.6 fois la taille de police */
+
+}
+
+.message p{
+
+    font-size: clamp(15px, 3vh, 35px);;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1px; /* Espace de 10px entre les mots */
+    line-height: 1.5; /* Hauteur de ligne à 1.6 fois la taille de police */
+
+    text-align: left;
+
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D71B8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size:    clamp(15px, 3vh, 26px);
+    transition: background-color 0.3s ease;
+}
+
+.cta-button .icon-container i {
+    display: flex;
+    flex-direction: column;
+    font-size: 20;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.menu-icon {
+    /* visibility: hidden; */
+    display: none;
+
+    font-size: 24px; /* Taille de l'icône */
+    color: white; /* Couleur de l'icône */
+    cursor: pointer; /* Curseur en forme de main pour indiquer qu'il est cliquable */
+}
+
+
+
+
+
+/* Redimentionnement du  menu d'entete*/
+
+@media  (max-width: 1084px) {
+
+    .menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+    }
+    .store-buttons{
+        display: none;
+    }
+
+    .adapt{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .menu img {
+        width: 120px;
+        aspect-ratio: 979/477;
+    
+    }
+}
+
+
+/* Mobile  L*/
+@media (max-width: 425px){
+
+
+.message h1{
+    font-size: 30px;
+}
+
+.message p{
+
+    font-size: 15px;
+
+}
+
+.cta-button {
+    display: inline-flex;
+
+    padding: 7px 12px;
+    font-size:   15px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button .icon-container i {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+}
+
+
+/* Redimentionnement du message d'acceuil*/
+/* @media (max-width: 889px){
+
+
+
+.message{
+
+    width: 100%;
+
+}
+
+.message h1{
+    font-size: 50px;
+
+}
+
+.message p{
+    font-size: 20px ;
+}
+
+.cta-button {
+    font-size: 20px;
+    padding: 10px 10px;
+
+}
+
+.cta-button .arrow {
+}
+
+
+} */
+
