@@ -20,25 +20,28 @@
 
             <img src="./assets/logo.png" alt="">
 
-            <div class="adapt">
+            <div class="menu-icon" id="toggle-menu">
+                <i class="fas fa-bars"></i>
+            </div>
 
-                <div class="menu-icon">
-                    <i class="fas fa-bars"></i>
-                </div>
-                
-                <nav class="navbar">
-                    <ul>
+            <div class="adapt" id="adapt">
+
+                    <ul class="navbar">
                         <li><a href="#">Acceuil</a></li>
                         <li><a href="#">Contactez-nous</a></li>
                         <li><a href="#">Qui sommes-nous</a></li>
                     </ul>
-                </nav>
 
                 <div class="store-buttons">
                     <a href="#" class="store-button google-play">
+
+                        <span class="market_place">PLAY-STORE</span>
+                        
                         <img src="./assets/Mobile play store badge .png" alt="Get it on Google Play">
                     </a>
+
                     <a href="#" class="store-button app-store">
+                        <span class="market_place">APP-STORE</span>
                         <img src="./assets/Mobile app store badge.png" alt="Download on the App Store">
                     </a>
                 </div>
@@ -70,7 +73,161 @@
     </header>
 
 
+    <section class="section2">
+
+        <div class="info">
+            <h2>C’est quoi SIPOH ?</h2>
+
+
+            <p>
+                SIPOH est un dispositif de sécurité conçu pour les personnes vulnérables, telles que les femmes, les enfants, et les personnes âgées. Notre mission est de fournir une solution efficace et facile d'utilisation pour prévenir les agressions, alerter les autorités et les proches en cas de danger, et offrir des ressources éducatives pour promouvoir la sécurité.
+            </p>
+
+
+        </div>
+
+
+        <img src="./assets/security.png" alt="">
+
+
+    </section>
+
+
+    <section class="section3">
+
+        <div class="header">
+
+            <h2>
+                Fonctionnalités Clés de SIPOH
+            </h2>
+
+            <p>
+                With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
+            </p>
+
+        </div>
+
+        <div class="fonctionnalites">
+
+            <article>
+
+
+                <div class="icon">
+                    <img src="./assets/Icon.png" alt="">
+                        
+                </div>
+
+
+                <h3>
+                    Alerte instantannée
+                </h3>
+
+                <p>
+                    Envoi de messages de détresse et de localisation en temps réel à vos contacts d'urgence, police.
+                </p>
+            </article>
+
+
+            <article>
+
+
+                <div class="icon">
+                    <img src="./assets/Icon.png" alt="">
+                        
+                </div>
+
+
+                <h3>
+                    Alerte instantannée
+                </h3>
+
+                <p>
+                    Envoi de messages de détresse et de localisation en temps réel à vos contacts d'urgence, police.
+                </p>
+            </article>
+
+
+            <article>
+
+
+                <div class="icon">
+                    <img src="./assets/Icon.png" alt="">
+                        
+                </div>
+
+
+                <h3>
+                    Alerte instantannée
+                </h3>
+
+                <p>
+                    Envoi de messages de détresse et de localisation en temps réel à vos contacts d'urgence, police.
+                </p>
+            </article>
+
+
+            <article>
+
+
+                <div class="icon">
+                    <img src="./assets/Icon.png" alt="">
+                        
+                </div>
+
+
+                <h3>
+                    Alerte instantannée
+                </h3>
+
+                <p>
+                    Envoi de messages de détresse et de localisation en temps réel à vos contacts d'urgence, police.
+                </p>
+            </article>
+            
+        </div>
+
+
+        <div class="end">
+            
+        </div>
+    </section>
+
+
     <main>
     </main>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Récupérer les éléments
+            const toggleMenuButton = document.getElementById('toggle-menu');
+            const adaptMenu = document.getElementById('adapt');
+        
+            // Fonction pour basculer la visibilité du menu
+            function toggleMenuVisibility() {
+                if (adaptMenu.style.visibility === 'hidden') {
+                    adaptMenu.style.visibility = 'visible';
+                } else {
+                    adaptMenu.style.visibility = 'hidden';
+                }
+            }
+        
+            // Gérer le clic sur le bouton pour afficher/masquer le menu
+            toggleMenuButton.addEventListener('click', function(event) {
+                toggleMenuVisibility();
+                event.stopPropagation(); // Empêcher la propagation du clic pour que le menu reste visible si on clique dessus
+            });
+        
+            // Gérer le clic en dehors du menu pour le cacher
+            document.addEventListener('click', function(event) {
+                // Vérifier si le clic est en dehors du menu
+                if (!adaptMenu.contains(event.target) && adaptMenu.style.visibility === 'visible') {
+                    adaptMenu.style.visibility = 'hidden';
+                }
+            });
+        });
+        
+    </script>
 </body>
 </html>
