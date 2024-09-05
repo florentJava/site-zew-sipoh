@@ -1,55 +1,37 @@
-/* Styles de base */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #202020;
+    color: #fff;
 }
 
-nav {
+.contact-card {
     background-color: #333;
-    padding: 10px;
+    border: 2px solid #00bfff;
+    border-radius: 8px;
+    width: 245px;
+    padding: 15px;
+    margin: 20px auto;
+    color: #fff;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
+.contact-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #00bfff;
+}
+
+.contact-details {
+    list-style: none;
     padding: 0;
+}
+
+.contact-details li {
+    margin: 10px 0;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-}
-
-/* Cacher le menu sur les petites tailles d'écran */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-}
-
-/* Media Query pour les petits écrans */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav ul li {
-        text-align: center;
-    }
+.contact-details li i {
+    margin-right: 10px;
+    color: #00bfff;
 }
