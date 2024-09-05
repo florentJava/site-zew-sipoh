@@ -1,37 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #202020;
-    color: #fff;
-}
-
-.contact-card {
-    background-color: #333;
-    border: 2px solid #00bfff;
-    border-radius: 8px;
-    width: 245px;
-    padding: 15px;
-    margin: 20px auto;
-    color: #fff;
-}
-
-.contact-card h3 {
-    margin-top: 0;
-    font-size: 18px;
-    color: #00bfff;
-}
-
-.contact-details {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-details li {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-}
-
-.contact-details li i {
-    margin-right: 10px;
-    color: #00bfff;
+.image-container {
+    /* position: relative; */
+    width: 100%; /* largeur de 100% du conteneur parent */
+    padding-bottom: 56.25%; /* aspect ratio 16:9, ajustez selon votre image */
+    background-image: url('./assets/nousBg.png');
+    background-size: contain; /* La totalité de l'image est visible sans être rognée */
+    background-repeat: no-repeat;
+    background-position: top;
+    height: auto;
 }
